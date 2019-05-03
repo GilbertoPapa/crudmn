@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec2e1e1f-5d80-4b48-b8c5-068f0c6c9cbf" name="Default Changelist" comment="" />
+    <list default="true" id="ec2e1e1f-5d80-4b48-b8c5-068f0c6c9cbf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,17 +16,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +31,7 @@
     <option name="width" value="1279" />
     <option name="height" value="555" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -50,6 +43,11 @@
             <path>
               <item name="crudmn" type="58d84e3e:PackageViewProjectNode" />
               <item name="crudmn" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="crudmn" type="58d84e3e:PackageViewProjectNode" />
+              <item name="crudmn" type="616d4139:PackageViewModuleNode" />
+              <item name="" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -89,67 +87,56 @@
           <expand>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="br" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="br" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="br" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="gilbertopapa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="br" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="gilbertopapa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="webservice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="crudmn" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -157,19 +144,6 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="gilbertopapa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="webservice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="crudmn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/crudmn" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="br" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="gilbertopapa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="webservice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -206,9 +180,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="1191" width="1279" height="555" extended-state="0" />
+    <frame x="302" y="1105" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20048505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19729514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -237,13 +211,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/gilbertopapa/webservice/teste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/gilbertopapa/webservice/teste.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
