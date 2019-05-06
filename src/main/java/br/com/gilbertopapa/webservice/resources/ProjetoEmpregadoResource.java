@@ -31,4 +31,5 @@ public class ProjetoEmpregadoResource {
         service.deleteRelationshipProjetoEmpregado(projetoId, empregadoId);
         return Response.noContent().build();
     }
+  
 }

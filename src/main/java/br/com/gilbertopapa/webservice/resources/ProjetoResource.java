@@ -59,4 +59,6 @@ public class ProjetoResource {
     public ProjetoEmpregadoResource getProjetoEmpregadoResource() {
         return new ProjetoEmpregadoResource();
     }
+
+
 }
