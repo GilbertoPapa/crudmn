@@ -1,6 +1,6 @@
 package br.com.gilbertopapa.webservice.resources;
 
-import br.com.gilbertopapa.webservice.model.domain.Empregado;
+import br.com.gilbertopapa.webservice.model.domain.Projeto;
 import br.com.gilbertopapa.webservice.service.RelationshipService;
 
 import javax.ws.rs.*;
@@ -14,17 +14,22 @@ public class EmpregadoProjetoResource {
 
     private RelationshipService service = new RelationshipService();
 
-    @GET
-    public List<Empregado> getEmpregados(@PathParam("projetoId")
-                                                 long projetoId) {
-        return service.getEmpregados(projetoId);
+    @POST
+    @Path("{projetoId}")
+    public Response save(@PathParam("projetoId") long projetoId, @PathParam("empregadoId") long empregadoId) {
+        service.saveRelationshipProjetoEmpregado(projetoId, empregadoId);
+        return Response.noContent().build();
     }
 
+    @GET
+    public List<Projeto> getProjetos(@PathParam("empregadoId") long empregadoId) {
+        return service.getProjetos(empregadoId);
+    }
 
     @DELETE
-    @Path("{empregadoId}")
-    public Response delete(@PathParam("projetoId") long projetoId,
-                           @PathParam("empregadoId") long empregadoId) {
+    @Path("{projetoId}")
+    public Response delete(@PathParam("projetoId") long projetoId, @PathParam("empregadoId") long empregadoId) {
+
         service.deleteRelationshipProjetoEmpregado(projetoId, empregadoId);
         return Response.noContent().build();
     }

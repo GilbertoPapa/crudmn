@@ -1,37 +1,58 @@
 package br.com.gilbertopapa.webservice.resources;
 
-import br.com.gilbertopapa.webservice.service.RelationshipService;
+import br.com.gilbertopapa.webservice.model.domain.Projeto;
+import br.com.gilbertopapa.webservice.resources.beans.FilterBean;
+import br.com.gilbertopapa.webservice.service.ProjetoService;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.UriInfo;
+import java.util.List;
 
-@Path("/projetos")
-@Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
-@Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
 public class ProjetoResource {
 
+    private ProjetoService service = new ProjetoService();
 
+    @GET
+    public List<Projeto> getProjetos(@BeanParam FilterBean projetoFilter) {
+        if ((projetoFilter.getOffset() >= 0) && (projetoFilter.getLimit() > 0)) {
+            return service.getProjetosByPagination(projetoFilter.getOffset(), projetoFilter.getLimit());
+        }
+        if (projetoFilter.getNome() != null) {
+            return service.getProjetosByName(projetoFilter.getNome());
+        }
 
-    @POST
+        return service.getProjetos();
+    }
+
+    @GET
     @Path("{projetoId}")
-    public Response save( @PathParam("projetoId") long projetoId,
-                          @PathParam("empregadoId") long empregadoId) {
-        service.saveRelationshipProjetoEmpregado(projetoId, empregadoId);
+    public Projeto getProjeto(@PathParam("projetoId") long id, @Context UriInfo uriInfo) {
+        return service.getProjeto(id);
+    }
+
+    @DELETE
+    @Path("{projetoId}")
+    public Response delete(@PathParam("projetoId") long id) {
+        service.deleteProjeto(id);
         return Response.noContent().build();
     }
 
-
-    @Path("{empregadoId}/projetos")
-    public EmpregadoProjetoResource getEmpregadoProjetoResource() {
-        return new EmpregadoProjetoResource();
+    @POST
+    public Response save(Projeto projeto) {
+        projeto = service.saveProjeto(projeto);
+        return Response.status(Response.Status.CREATED)
+                .entity(projeto)
+                .build();
     }
 
-    private RelationshipService service = new RelationshipService();
-
-    @GET
-    public void testeSubrecurso() {
-        System.out.println("Testando subrecurso!");
+    @PUT
+    @Path("{projetoId}")
+    public Response update(@PathParam("projetoId") long id, Projeto projeto) {
+        projeto.setId(id);
+        service.updateProjeto(projeto);
+        return Response.noContent().build();
     }
 
     @Path("{projetoId}/empregados")

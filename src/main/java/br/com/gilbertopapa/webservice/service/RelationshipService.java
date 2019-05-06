@@ -11,8 +11,8 @@ public class RelationshipService {
     private ProjetoEmpregadoDAO dao = new ProjetoEmpregadoDAO();
 
 
-    public void saveRelationshipProjetoEmpregado(Long projetoId,
-                                                 Long empregadoId) {
+    public void saveRelationshipProjetoEmpregado(long projetoId, long empregadoId) {
+
         dao.saveRelationship(projetoId, empregadoId);
     }
 
@@ -24,10 +24,8 @@ public class RelationshipService {
         return dao.getProjetos(empregadoId);
     }
 
-    public void deleteRelationshipProjetoEmpregado(long projetoId,
-                                                   long empregadoId) {
+    public void deleteRelationshipProjetoEmpregado(long projetoId, long empregadoId) {
         dao.deleteRelationship(projetoId, empregadoId);
     }
-
 
 }
