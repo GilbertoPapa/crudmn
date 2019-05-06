@@ -10,7 +10,6 @@ import java.util.List;
 
 public class EmpregadoDAO {
 
-
     public List<Empregado> getAll() {
         EntityManager em = JPAUtil.getEntityManager();
         List<Empregado> empregados;
@@ -178,7 +177,6 @@ public class EmpregadoDAO {
 
         return true;
     }
-
 
 
 }

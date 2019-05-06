@@ -11,6 +11,7 @@ import java.util.List;
 
 @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
 public class EmpregadoProjetoResource {
+
     private RelationshipService service = new RelationshipService();
 
     @POST
@@ -28,6 +29,7 @@ public class EmpregadoProjetoResource {
     @DELETE
     @Path("{projetoId}")
     public Response delete(@PathParam("projetoId") long projetoId, @PathParam("empregadoId") long empregadoId) {
+
         service.deleteRelationshipProjetoEmpregado(projetoId, empregadoId);
         return Response.noContent().build();
     }
