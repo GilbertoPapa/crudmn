@@ -2,13 +2,17 @@
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/dao/JPAUtil.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/resources/ProjetoResource.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/exceptions/ErrorCode.java
+/home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/dao/config/PersistenceConfig.java
+/home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/resources/EmpregadoProjetoResource.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/domain/Empregado.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/dao/ProjetoDAO.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/domain/ErrorMessage.java
+/home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/service/RelationshipService.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/service/EmpregadoService.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/dao/EmpregadoDAO.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/dao/ProjetoEmpregadoDAO.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/model/domain/Projeto.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/resources/beans/FilterBean.java
+/home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/resources/ProjetoEmpregadoResource.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/service/ProjetoService.java
 /home/gilberto/crudmn/src/main/java/br/com/gilbertopapa/webservice/resources/EmpregadoResource.java
