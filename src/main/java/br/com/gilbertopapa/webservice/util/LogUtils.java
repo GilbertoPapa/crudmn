@@ -10,7 +10,6 @@ import com.google.gson.JsonObject;
 
 public class LogUtils {
 
-
     private static final Logger log = Logger.getLogger(LogUtils.class);
     private static final String UUID = "uuid";
     private static final String SERVICE_NAME = "service-name";
