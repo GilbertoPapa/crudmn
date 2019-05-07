@@ -53,10 +53,10 @@ public class LogUtils {
         JsonObject json = new JsonObject();
 
         if(request != null) {
-            json.addProperty("Service", request.getProperty(SERVICE_NAME).toString());
-            json.addProperty("UUID", request.getProperty(UUID).toString());
-            json.addProperty("HTTPMethod", request.getHttpMethod().toString());
-            json.addProperty("URI", request.getUri().toString());
+            //json.addProperty("Service", request.getProperty(SERVICE_NAME).toString());
+            //json.addProperty("UUID", request.getProperty(UUID).toString());
+            //json.addProperty("HTTPMethod", request.getHttpMethod().toString());
+            //json.addProperty("URI", request.getUri().toString());
         }
 
         return json;
