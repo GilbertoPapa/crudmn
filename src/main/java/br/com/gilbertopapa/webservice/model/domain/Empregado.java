@@ -18,13 +18,6 @@ public class Empregado {
     private String cargo;
 
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
-
-    private String nome;
-    private String cargo;
-
     @ManyToMany(mappedBy = "empregados")
     @JsonIgnore
     private List<Projeto> projetos;
