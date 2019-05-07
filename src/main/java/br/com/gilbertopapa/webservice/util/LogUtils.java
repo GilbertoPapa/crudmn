@@ -1,14 +1,15 @@
 package br.com.gilbertopapa.webservice.util;
 
+import org.apache.log4j.Logger;
+import org.wso2.msf4j.Request;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.google.gson.JsonObject;
-import org.apache.log4j.Logger;
-
-import javax.ws.rs.core.Request;
 
 public class LogUtils {
+
     private static final Logger log = Logger.getLogger(LogUtils.class);
     private static final String UUID = "uuid";
     private static final String SERVICE_NAME = "service-name";
@@ -53,10 +54,10 @@ public class LogUtils {
         JsonObject json = new JsonObject();
 
         if(request != null) {
-            //json.addProperty("Service", request.getProperty(SERVICE_NAME).toString());
-            //json.addProperty("UUID", request.getProperty(UUID).toString());
-            //json.addProperty("HTTPMethod", request.getHttpMethod().toString());
-            //json.addProperty("URI", request.getUri().toString());
+            json.addProperty("Service", request.getProperty(SERVICE_NAME).toString());
+            json.addProperty("UUID", request.getProperty(UUID).toString());
+            json.addProperty("HTTPMethod", request.getHttpMethod().toString());
+            json.addProperty("URI", request.getUri().toString());
         }
 
         return json;
