@@ -1,5 +1,8 @@
 package br.com.gilbertopapa.webservice.model.dao.config;
 
+
+import br.com.gilbertopapa.webservice.util.LogUtils;
+
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.HashMap;
@@ -13,6 +16,9 @@ public class PersistenceConfig {
     private static final String URL_CONNECTION_PARAMS = "?useSSL=false&autoReconnect=true";
     private static final String HIBERNATE_DIALECT = "org.hibernate.dialect.MySQLDialect";
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
+
+
+    private LogUtils log = new LogUtils();
 
 
     @SuppressWarnings("unchecked")
@@ -31,10 +37,11 @@ public class PersistenceConfig {
         try {
             return Persistence.createEntityManagerFactory("jpa", properties);
         } catch (Exception e) {
-           // log.messageError("Failed connecting to database. Message: " + e.getMessage() + "; Details: " + e.getCause().toString());
+            log.messageError("Failed connecting to database. Message: " + e.getMessage() + "; Details: " + e.getCause().toString());
 
+            throw e;
         }
 
-        return null;
+
     }
 }
